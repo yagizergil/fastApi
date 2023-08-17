@@ -4,11 +4,11 @@ from urllib.request import Request
 import joblib
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from .sentiment_model import predict_sentiment
+from sentiment_model import predict_sentiment
 from fastapi.middleware.cors import CORSMiddleware
-from .sentiment_model import save_sentiment_to_database
+from sentiment_model import save_sentiment_to_database
 from fastapi.responses import JSONResponse
-from .sentiment_model import predict_sentiment, load_vectorizer, save_sentiment_to_database, get_sentiment_data
+from sentiment_model import predict_sentiment, load_vectorizer, save_sentiment_to_database, get_sentiment_data
 
 
 app = FastAPI()
